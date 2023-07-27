@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Musa Aydeniz" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Age Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" action="">
+        <div class="form-container">
+          <div class="form-group">
+            <label id="day-label">DAY</label>
+            <input
+              type="number"
+              id="day-input"
+              class="form-control"
+              placeholder="DD"
+            />
+            <div class="error day-error"></div>
+          </div>
+          <div class="form-group">
+            <label id="month-label">MONTH</label>
+            <input
+              type="number"
+              id="month-input"
+              class="form-control"
+              placeholder="MM"
+            />
+            <div class="error month-error"></div>
+          </div>
+          <div class="form-group">
+            <label id="year-label">YEAR</label>
+            <input
+              type="number"
+              id="year-input"
+              class="form-control"
+              placeholder="YYYY"
+            />
+            <div class="error year-error"></div>
+          </div>
+        </div>
+
+        <div class="button-section">
+          <div class="line"></div>
+          <button type="submit" id="button">
+            <img src="images/icon-arrow.svg" alt="" />
+          </button>
+          <div class="second-line"></div>
+        </div>
+      </form>
+
+      <div>
+        <span id="years" class="date">- -</span>
+        <p>years</p>
+      </div>
+      <div>
+        <span id="months" class="date">- -</span>
+        <p>months</p>
+      </div>
+      <div>
+        <span id="days" class="date">- -</span>
+        <p>days</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
